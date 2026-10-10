@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALIPSTORE — Marketplace Digital Premium</title>
+<meta name="description" content="ALIPSTORE — marketplace digital premium untuk UID Free Fire, script, dan tools digital. Belanja tanpa perlu login.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <div class="logo" id="logoBtn">
+      <div class="logo-mark">A</div>
+      <div>
+        <div class="logo-text">ALIPSTORE</div>
+        <div class="logo-sub">MARKETPLACE DIGITAL PREMIUM</div>
+      </div>
+    </div>
+
+    <nav class="main-nav" id="mobileNav">
+      <a class="nav-link" data-route="home" onclick="location.hash='#/'">Beranda</a>
+      <a class="nav-link" data-route="uid" onclick="location.hash='#/kategori/uid'">UID Free Fire</a>
+      <a class="nav-link" data-route="script" onclick="location.hash='#/kategori/script'">Script Store</a>
+      <a class="nav-link" data-route="tools" onclick="location.hash='#/kategori/tools'">Tools Digital</a>
+      <a class="nav-link" data-route="cara" onclick="location.hash='#/cara-pembelian'">Cara Pembelian</a>
+      <a class="nav-link" data-route="faq" onclick="location.hash='#/faq'">FAQ</a>
+      <a class="nav-link" data-route="kontak" onclick="location.hash='#/kontak'">Hubungi Admin</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="wa-btn" id="headerWaBtn" target="_blank" rel="noopener" href="https://wa.me/6285840840520">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.6-.8-1.8-.9-.2-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.5.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.6-1.4-1.8-.2-.3 0-.4.1-.6l.4-.5c.1-.1.2-.3.2-.4.1-.2 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.1 1.6 2.5 3.9 3.4 2.3.9 2.3.6 2.7.5.4 0 1.4-.6 1.5-1.1.2-.5.2-1 .1-1.1 0-.1-.2-.2-.4-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.1-.4-4.4-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 20.2 12 8.2 8.2 0 0 1 12 20.2Z"/></svg>
+        <span>WhatsApp</span>
+      </a>
+      <button class="mobile-nav-btn" id="mobileNavBtn">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============== HOME ============== -->
+  <div class="view active" id="view-home">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">● Marketplace Digital Premium</div>
+          <h1 id="heroTitle">Belanja UID Free Fire &amp; Script <span>tanpa ribet, tanpa akun.</span></h1>
+          <p id="heroSub">Pilih produk, cek detailnya, lalu checkout langsung ke WhatsApp atau Telegram admin. Cepat, aman, dan selalu update.</p>
+          <div class="search-row" style="display:block;max-width:420px;">
+            <input type="text" id="heroSearchInput" placeholder="Cari UID, script, atau tools...">
+          </div>
+          <div class="hero-actions" style="margin-top:18px;">
+            <a class="btn btn-primary" href="#/kategori/uid">Lihat UID Free Fire</a>
+            <a class="btn" href="#/kategori/script">Lihat Script Store</a>
+          </div>
+        </div>
+        <div class="hero-visual" id="heroVisual">
+          <div class="hv-empty">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="9" r="1.7"/><path d="m21 15-5-5L5 21"/></svg>
+            <span>Banner toko bisa diatur dari Admin → Pengaturan</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============== CATEGORY / CATALOG ============== -->
+  <div class="view" id="view-category"></div>
+
+  <!-- ============== PRODUCT DETAIL ============== -->
+  <div class="view" id="view-detail"></div>
+
+  <!-- ============== FAQ ============== -->
+  <div class="view" id="view-faq"></div>
+
+  <!-- ============== CARA PEMBELIAN ============== -->
+  <div class="view" id="view-cara"></div>
+
+  <!-- ============== KONTAK ============== -->
+  <div class="view" id="view-kontak"></div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h5>ALIPSTORE</h5>
+        <p style="font-size:13px;color:var(--muted);line-height:1.6;max-width:280px;">Marketplace digital premium untuk UID Free Fire, script, dan tools digital. Tidak perlu login — langsung checkout via WhatsApp atau Telegram.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Jelajahi</h5>
+        <span class="fl" onclick="location.hash='#/kategori/uid'">UID Free Fire</span>
+        <span class="fl" onclick="location.hash='#/kategori/script'">Script Store</span>
+        <span class="fl" onclick="location.hash='#/kategori/tools'">Tools Digital</span>
+        <span class="fl" onclick="location.hash='#/cara-pembelian'">Cara Pembelian</span>
+      </div>
+      <div class="footer-col">
+        <h5>Bantuan</h5>
+        <span class="fl" onclick="location.hash='#/faq'">FAQ</span>
+        <span class="fl" onclick="location.hash='#/kontak'">Hubungi Admin</span>
+        <a href="https://wa.me/6285840840520" target="_blank" rel="noopener">WhatsApp: +62 858-4084-0520</a>
+        <a href="https://t.me/Alipgg61" target="_blank" rel="noopener">Telegram: @Alipgg61</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="yearNow"></span> ALIPSTORE. Semua hak dilindungi.</span>
+      <span>Dibangun dengan ALIPSTORE Marketplace Engine</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============== CHECKOUT MODAL ============== -->
+<div class="overlay" id="checkoutOverlay">
+  <div class="modal">
+    <div class="modal-head">
+      <h3 id="checkoutModalTitle">Lanjut ke Chat</h3>
+      <div class="modal-close" id="checkoutClose">&times;</div>
+    </div>
+    <form id="checkoutForm">
+      <div class="modal-body">
+        <div class="checkout-summary">
+          <img id="checkoutImg" src="" alt="">
+          <div>
+            <div class="cs-name" id="checkoutName"></div>
+            <div class="cs-price" id="checkoutPrice"></div>
+          </div>
+        </div>
+        <div class="field">
+          <label>Nama Panggilan</label>
+          <input type="text" id="buyerName" placeholder="Contoh: Budi" required>
+        </div>
+        <div class="field">
+          <label>Catatan (opsional)</label>
+          <textarea id="buyerNote" rows="3" placeholder="Pertanyaan atau permintaan tambahan..."></textarea>
+        </div>
+      </div>
+      <div class="modal-foot" style="display:flex;gap:10px;">
+        <button type="button" class="btn" id="checkoutCancel" style="flex:1;justify-content:center;">Batal</button>
+        <button type="submit" class="btn btn-primary" id="checkoutSubmitBtn" style="flex:1;justify-content:center;">Lanjutkan ke Chat</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script type="module" src="js/app.js"></script>
+<script>document.getElementById('yearNow').textContent = new Date().getFullYear();</script>
+</body>
+</html>
